@@ -29,6 +29,11 @@ public class Addition {
 		return add.getNum1() + add.getNum2();
 	}
 	
+	@Override
+	public String toString() {
+		Addition add = new Addition(num1, num2);
+		return "Addition : "+ num1 + " + " + num2 + " = " + value(add);
+	}
 	public static void main (String[] args){
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the first argument : ");
@@ -36,7 +41,7 @@ public class Addition {
 		System.out.println("Enter the second argument : ");
 		int num2 = scan.nextInt();
 		Addition add = new Addition(num1, num2);
-		System.out.println("Value of the addition : "+value(add));
+		System.out.println(add.toString());
 	}
 	
 	
