@@ -31,7 +31,7 @@ public class Multiplication {
 	
 	@Override
 	public String toString() {
-		Addition mul = new Multiplication(num1, num2);
+		Multiplication mul = new Multiplication(num1, num2);
 		return "Multiplication : "+ num1 + " x " + num2 + " = " + value(mul);
 	}
 	public static void main (String[] args){
